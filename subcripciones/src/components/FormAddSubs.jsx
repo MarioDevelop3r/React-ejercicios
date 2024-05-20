@@ -1,16 +1,26 @@
 import { useState } from "react";
 
 
-const FormAddSubs = ({ setType, setPrice, type, price, setSubs, subs, editId, setEditId}) => {
-    const [error, setError] = useState(false);
+const FormAddSubs = ({ setType, setPrice, type, price, setSubs, subs, editId, setEditId, spent, count}) => {
 
-    const handleSubs = e => {
+
+    const [error, setError] = useState(false);
+    const [errorMoney, setErrorMoney] = useState(false);
+
+
+    const handleSubs = (e) => {
         e.preventDefault();
         if (price === "" || Number(price) < 0 || type === "") {
             setError(true);
             return;
         }
+        if(count - spent < Number(price)){
+            setErrorMoney(true);
+            return;
+        }
+
         setError(false);
+        setErrorMoney(false);
         if(editId != ""){
             setEditId("");
             const newSubs = subs.map(item => {
@@ -39,7 +49,7 @@ const FormAddSubs = ({ setType, setPrice, type, price, setSubs, subs, editId, se
     return (
         <div className="add-subscription">
             <h3>Agregar Suscripciones</h3>
-            <form onSubmit={handleSubs}>
+            <form onSubmit={ handleSubs }>
                 <p>Servicio</p>
                 <select onChange={e => setType(e.target.value)} value={type}>
                     <option value="">-- Elegir --</option>
@@ -58,6 +68,7 @@ const FormAddSubs = ({ setType, setPrice, type, price, setSubs, subs, editId, se
                 
             </form>
             {error ? <p className="error">Campos inavlidos</p> : null}
+            {errorMoney ? <p className="error">No tienes presupuesto</p> : null}
         </div>
     )
 }

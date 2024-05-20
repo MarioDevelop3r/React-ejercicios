@@ -22,8 +22,8 @@ const SingleItem = ({ price, type, id, eliminarItem, editItem }) => {
     <div className="single-item">
       <img src={urlImage} alt="Services" />
       <h3>precio: {moneyFormat(Number(price))}</h3>
-      <a href="" onClick={HandleDelete}>Borrar</a>
-      <a href="" onClick={HandleEdit}>Editar</a>
+      <a href="" className="delete" onClick={HandleDelete}>Borrar</a>
+      <a href="" className="edit" onClick={HandleEdit}>Editar</a>
     </div>
   );
 }

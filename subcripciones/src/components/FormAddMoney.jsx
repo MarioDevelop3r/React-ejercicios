@@ -15,7 +15,7 @@ const FormAddMoney = ({ setCount, setIsValid }) => {
         setError(false);
         setCount(Number(input))
         setIsValid(true);
-        
+
     };
 
     return (

@@ -1,5 +1,6 @@
 import SingleItem from "./SingleItem"
 
+
 const DisplayItems = ({ subs, eliminarItem, editItem }) => {
   return (
   <>
