@@ -4,14 +4,14 @@ const FormAddSubs = ({ setType, setPrice, type, price }) => {
 
     const handleSubs = e => {
         e.preventDefault();
-        console.log(type)
-        console.log(price)
+        console.log(type);
+        console.log(price);
     }
-    
+
     return (
         <div className="add-subscription">
             <h3>Agregar Suscripciones</h3>
-            <form onSubmit={handleSubs}>
+            <form onSubmit={ handleSubs }>
                 <p>Servicio</p>
                 <select onChange={e => setType(e.target.value)}>
                     <option value="">-- ELegir --</option>
