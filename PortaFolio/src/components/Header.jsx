@@ -7,7 +7,7 @@ const Header = () => {
     <div className="contenedor-header">
         <header>
             <div className="logo">
-                <a href="#">CodeBeard</a>
+                <a href="#">CODEBEARD</a>
             </div>
             <nav id="nav">
                 <ul>
