@@ -8,7 +8,7 @@ const Section = () => {
                     <img src="img/codebeard-high-resolution-logo-white-on-transparent-background.png" alt="" />
                 </div>
                 <h1 className="text ">CODEBEARD</h1>
-                <h2>Develop3rs</h2>
+                <h2>Developers</h2>
                 <div className="redes">
                     <a href="https://www.facebook.com/donMarioxD"><img src="/src/assets/facebook.png" alt="" /></a>
                     <a href="https://www.instagram.com/rojasmario/"><img src="/src/assets/1491580635-yumminkysocialmedia26_83102 (1).png" alt="" /></a>
