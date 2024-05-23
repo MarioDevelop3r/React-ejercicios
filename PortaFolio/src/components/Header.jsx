@@ -13,7 +13,7 @@ const Header = () => {
                 <ul>
                     <li><a href="#inicio" onClick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onClick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skill" onClick="seleccionar()"></a>SKILL</li>
+                    <li><a href="#skills" onClick="seleccionar()">SKILLS</a></li>
                     <li><a href="#curriculum" onClick="seleccionar()">CURRICULUM</a></li>
                     <li><a href="#portafolio" onClick="seleccionar()">PORTAFOLIO</a></li>
                     <li><a href="#contacto" onClick="seleccionar()"></a>CONTACTO</li>

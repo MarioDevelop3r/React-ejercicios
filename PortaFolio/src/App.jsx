@@ -7,7 +7,7 @@ import Curriculum from './components/Curriculum'
 import Header from './components/Header'
 import Portfolio from './components/Portfolio'
 import Section from './components/Section'
-import Skill from './components/Skill'
+import Skills from './components/Skills.jsx'
 
 function App() {
 
@@ -16,10 +16,10 @@ function App() {
     <>
       <Header />
       <Section />
-      <AboutMe />
-      <Skill />
-      <Curriculum />
       <Portfolio />
+      <AboutMe />
+      <Skills />
+      <Curriculum />
       <Contact />
       <Footer />
     </>
