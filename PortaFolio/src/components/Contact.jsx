@@ -21,23 +21,7 @@ const Contact = () => {
         </div>
       
         <div className="col">
-          <img src="img/ubicacion.png" alt=""/>
-          <div className="info">
-            <ul>
-              <li>
-                <i className="fa-solid fa-location-dot"></i>
-                Nicaragua 159, San Rafael Mza
-              </li>
-              <li>
-                <i className="fa-solid fa-mobile-screen"></i>
-                Llamanos: 2384 - 4343443
-              </li>
-              <li>
-                <i className="fa-solid fa-envelope"></i>
-                Email: cw@example.com
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </div>
     </div>
