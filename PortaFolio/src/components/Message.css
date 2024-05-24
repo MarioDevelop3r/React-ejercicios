@@ -1,0 +1,17 @@
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background-color: #DCF8C6; /* Color de los mensajes del usuario */
+    align-self: flex-end;
+}
+
+.message.other {
+    background-color: #FFF; /* Color de los mensajes del interlocutor */
+    align-self: flex-start;
+}
