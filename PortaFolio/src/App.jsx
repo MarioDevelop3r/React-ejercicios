@@ -8,7 +8,7 @@ import Header from './components/Header'
 import Portfolio from './components/Portfolio'
 import Section from './components/Section'
 import Skills from './components/Skills.jsx'
-import ChatBox from './components/Chatbox.jsx'
+
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
       <Curriculum />
       <Contact />
       <Footer />
-      <ChatBox />
+     
     </>
 
 

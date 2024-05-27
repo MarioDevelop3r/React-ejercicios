@@ -1,4 +1,6 @@
 import '../App.js'
+import ChatBox from './Chatbox.jsx'
+
 
 const Contact = () => {
   return (
@@ -20,9 +22,15 @@ const Contact = () => {
           </button>
         </div>
       
+        
         <div className="col">
           
+       <ChatBox />
+
+        
+          
         </div>
+       
       </div>
     </div>
 
